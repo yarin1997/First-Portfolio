@@ -1,0 +1,136 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .container {
+      background-image: url(./image/Path\ 15.png);
+      background-size: cover;
+      width: 100vw;
+      height: 480px;
+  }
+
+  .container2 {
+      background-color: #1A1A1AD4;
+      width: 450px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 125px;
+      right: 235px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .container3 {
+      width: 350px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      direction: rtl;
+  }
+
+  h2 {
+      color: #fff;
+      font-family: heebo;
+      font-size: 30px;
+      font-weight: 900;
+      text-align: center;
+
+  }
+
+  p {
+      color: #fff;
+      font-family: heebo;
+      font-size: 17px;
+      font-weight: 400;
+      text-align: center;
+  }
+
+  .inputin {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+  }
+
+  label {
+      font-family: heebo;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+
+  }
+
+  input {
+      width: 350px;
+      height: 50px;
+  }
+
+  input[id~=submit] {
+      width: 160px;
+      height: 50px;
+      font-size: 22px;
+      font-family: heebo;
+      font-weight: 700;
+      color: #fff;
+      background-color: #D31C75;
+  }
+
+  @media (max-width:650px) {
+      .container {
+          height: 213px;
+          background-size: cover;
+          background-position: top, left;
+      }
+
+      .container2 {
+          width: 298px;
+          height: 440px;
+          right: auto;
+          top: 72px;
+          position: absolute;
+
+      }
+
+      .container3 {
+          width: 230px;
+          height: 348px;
+          gap: 20px;
+      }
+
+
+      .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      input {
+          width: 230px;
+          height: 28px;
+      }
+
+      label {
+          font-size: 14px;
+      }
+
+      h2 {
+          font-size: 25px;
+          width: 200px;
+      }
+
+      p {
+          font-size: 15px;
+      }
+
+      input[id~=submit] {
+          width: 75px;
+          height: 33px;
+          font-size: 15px;
+      }
+  }

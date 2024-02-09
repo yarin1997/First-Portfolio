@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: #E5EEFF;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 150px;
+}
+
+
+.item3 {
+    background-color: #020253;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.item3>h1 {
+    color: #0EE1DA;
+    font-family: assistant;
+    font-weight: 700;
+    font-size: 61px;
+    margin-block-end: 0;
+    text-align: center;
+
+}
+
+.item3>p {
+    font-family: assistant;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F9F9F9;
+    width: 475px;
+}
+
+.flex-item {
+    grid-row: span 3;
+    grid-column: span 2;
+    display: flex;
+    background-color: #8E097C;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.name,
+.email,
+.expeirence,
+.sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.centerit{
+    width: 505px;
+    display: flex;
+        flex-direction: column;
+        justify-content:end;
+        align-items: center;
+        gap: 30px;
+        
+}
+
+.centerit>h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 35px;
+    font-family: assistant;
+    font-weight: 700;
+   
+}
+
+div>p {
+    color: #F9F9F9;
+    font-family: assistant;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+div>label {
+    color: #0EE1DA;
+    font-size: 16px;
+    font-family: heebo;
+    font-weight: 700;
+   
+}
+
+div>input {
+    background-color: #E5EEFF;
+    width: 500px;
+    height: 60px;
+    border-bottom: 5px solid #0EE1DA;
+}
+input[id=more] {
+   height: 172px;
+}
+
+input[id=submit] {
+    color: #011560;
+    background-color: #0EE1DA;
+    font-size: 24px;
+    font-family: heebo;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+@media screen and (max-width: 650px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(12, 145px);
+        gap: 10px;
+        padding-top:0;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+
+    .item3>h1 {
+        font-size: 36px;
+    }
+
+    .item3>p {
+        width: 260px;
+    }
+
+    img {
+        width: 162px;
+        height: 143px;
+        /* outline: 2px solid #011560; */
+    }
+
+    .item3 {
+        width: 100vw;
+        order: 0;
+    }
+
+    .item1 {
+        order: 1;
+        margin-left: 20px;
+    }
+
+    .item2 {
+        order: 1;
+    }
+
+    .item4 {
+        order: 1;
+        margin-left: 20px;
+    }
+
+    .item5 {
+        order: 1;
+       
+        }
+    
+
+    .item6 {
+        order: 1;
+        margin-left: 20px;
+    }
+    .item7 {
+        order: 1;
+        }
+
+    .item8 {
+        order: 1;
+        margin-left: 20px;
+    }
+
+    .item9 {
+        order:1;
+    }
+
+    .item10 {
+
+        order: 1;
+
+        margin-left:20px;
+
+        margin-right: 20px;
+
+
+    }
+
+    .item11 {
+        order: 2;
+        margin-left: 20px;
+    }
+
+    .item12 {
+        order: 2;
+    }
+
+    .item13 {
+        order: 2;
+        margin-left: 20px;
+    }
+
+    .item14 {
+        order: 2;
+    }
+
+    .item15 {
+        order: 2;
+        margin-left: 20px;
+    }
+
+    .item16 {
+        order: 2;
+    }
+    .centerit{
+        gap: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .centerit>h1 {
+
+        font-size: 25px;
+    }
+
+    .centerit>p {
+        font-size: 15px;
+        width: 270px;
+    }
+
+    .centerit>label {
+        font-size: 8px;
+        width: 260px;
+    }
+
+    div>input {
+        width:300px;
+        height: 33px;
+        border-bottom: 2.5px solid #0EE1DA;
+    }
+input[id=more] {
+    height: 95px;
+    width: 300px;
+}
+    input[id=submit] {
+        width: 300px;
+        height: 33px;
+        font-size: 12px;
+        border-bottom: none;
+    
+    }
+
+}
