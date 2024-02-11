@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(#281EFF, #2DFF8C);
+    height: 100vh;
+
+}
+
+.container>h1 {
+    color: #FFFFFF;
+    font-family: Satisfy;
+    font-weight: 400;
+    font-size: 160px;
+    text-align: center;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+.container>h2 {
+    color: #FFFFFF;
+    font-family: Varela Round;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}
+
+.container>p {
+    color: #F9F9F9;
+    font-family: Varela Round;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.email,
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 417.5px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background-color: #F6F6F624;
+}
+
+input[id~=submit] {
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    font-family: Varela Round;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    width: 206px;
+    height: 50px;
+    order: -1;
+}
+
+label {
+    color: #F9F9F9;
+    font-family: Varela Round;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+}
+
+@media screen and (max-width: 650px) {
+
+    .container {
+        justify-content: space-evenly;
+        gap:0px;
+    }
+
+    .container>h1 {
+        font-size: 60px;
+    }
+
+    .container>h2 {
+        font-size: 18px;
+    }
+
+    .container>p {
+        font-size: 16px;
+        width: 318px;
+        margin-bottom: 20px;
+    }
+    .form-flex{
+       flex-direction: column;
+       margin: 0;
+    }
+    input{
+        width: 301.5px;
+        height: 36px;
+    }
+    .name{
+        order: -1;
+    }
+    input[id~=submit]
+    {
+        width: 299px;
+        height: 33px;
+        order: 1;
+        }
+    }
